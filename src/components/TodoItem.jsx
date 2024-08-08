@@ -25,6 +25,14 @@ const TodoItem = ({ todo, updateTodo, deleteTodo, toggleDone }) => {
               {todo.text}
             </span>
           )}
+          <div
+            className="todo-item"
+            style={{
+              display: "flex",
+              justifyContent: "flex-end",
+              alignItems: "center",
+            }}
+          ></div>
           <input
             type="checkbox"
             checked={todo.done}
